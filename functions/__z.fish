@@ -1,1 +1,0 @@
-/Users/malo/.config/fisherman/z/functions/__z.fish

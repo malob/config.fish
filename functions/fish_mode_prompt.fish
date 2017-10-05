@@ -1,1 +1,0 @@
-/Users/malo/.config/fisherman/bobthefish/fish_mode_prompt.fish
