@@ -7,5 +7,4 @@ sudo rm -r fish fisherman
 git clone https://github.com/malob/config.fish.git
 mv config.fish fish
 fisher
-fish_vi_key_bindings
 ```
