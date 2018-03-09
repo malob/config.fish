@@ -1,1 +1,1 @@
-thefuck --alias | source
+/Users/malo/.config/fisherman/thefuck/functions/fuck.fish

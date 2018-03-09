@@ -2,6 +2,8 @@
 alias cat="ccat"
 alias airpods="osascript /Users/malo/Library/Mobile\ Documents/com~apple~ScriptEditor2/Documents/Connect\ AirPods.scpt"
 alias beats="osascript /Users/malo/Library/Mobile\ Documents/com~apple~ScriptEditor2/Documents/Connect\ Beats.scpt"
+alias ghci="stack ghci"
+alias ghc="stack ghc"
 
 # Theme settings
 set -gx theme_nerd_fonts yes
