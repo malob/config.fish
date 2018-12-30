@@ -1,1 +1,1 @@
-/Users/malo/.config/fisherman/thefuck/functions/fuck.fish
+/home/malo/.config/fisherman/thefuck/functions/fuck.fish

@@ -9,4 +9,4 @@ set -gx theme_color_scheme solarized-dark
 # Other
 set -gx EDITOR nvim
 set -gx fish_key_bindings fish_vi_key_bindings
-set -gx HOMEBREW_NO_GITHUB_API 1
+set -gx fish_term24bit 1

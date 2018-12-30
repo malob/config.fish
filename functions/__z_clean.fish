@@ -1,1 +1,1 @@
-/Users/malo/.config/fisherman/z/functions/__z_clean.fish
+/home/malo/.config/fisherman/z/functions/__z_clean.fish

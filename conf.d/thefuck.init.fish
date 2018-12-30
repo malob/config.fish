@@ -1,1 +1,1 @@
-/Users/malo/.config/fisherman/thefuck/init.fish
+/home/malo/.config/fisherman/thefuck/init.fish

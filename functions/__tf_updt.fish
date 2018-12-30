@@ -1,1 +1,1 @@
-/Users/malo/.config/fisherman/thefuck/functions/__tf_updt.fish
+/home/malo/.config/fisherman/thefuck/functions/__tf_updt.fish
