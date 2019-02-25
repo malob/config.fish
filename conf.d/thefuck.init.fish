@@ -1,1 +1,0 @@
-/Users/malo/.config/fisherman/thefuck/init.fish

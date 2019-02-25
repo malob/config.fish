@@ -1,1 +1,0 @@
-/Users/malo/.config/fisherman/ssh-agent/init.fish
