@@ -1,6 +1,11 @@
 function nixuser-rebuild
-  if test "$argv[2]" = "--all"
+  if test "$argv[1]" = '--all'
     nixuser-update-sources
   end
-  nix-env -riA nixos.$argv[1]
+  if test (nix eval nixpkgs.stdenv.isDarwin) = 'true'
+    nix-env -riA nixpkgs.myMacosEnv
+    nixuser-simlink-apps
+  else
+    nix-env -riA nixos.myLinuxEnv
+  end
 end
