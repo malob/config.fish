@@ -7,6 +7,9 @@ set -g fish_term24bit 1
 alias ghci="stack ghci"
 alias ghc="stack ghc"
 alias cat="bat"
+alias g="git"
+alias ns="nvr -o"
+alias nv="nvr -O"
 
 ###################
 # Prompt settings #
@@ -73,4 +76,4 @@ set -g fish_pager_color_progress $base2 --background=$cyan
 # Other #
 #########
 
-set -x EDITOR nvr -o
+set -x EDITOR "nvr --remote-silent"
