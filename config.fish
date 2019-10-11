@@ -1,15 +1,23 @@
 set -g fish_term24bit 1
+set fish_greeting ''
 
 ###########
 # Aliases #
 ###########
 
-alias ghci="stack ghci"
-alias ghc="stack ghc"
 alias cat="bat"
 alias g="git"
-alias ns="nvr -o"
-alias nv="nvr -O"
+
+if test -n "$NVIM_LISTEN_ADDRESS"
+  alias nh "nvr -o"
+  alias nv "nvr -O"
+  alias nt "nvr --remote-tab"
+  alias n "nvr"
+  alias neovim 'command nvim'
+  alias nvim "echo 'You\'re already in nvim. Consider using n, nh, nv, or nt instead. Use \'neovim\' to force.'"
+else
+  alias n 'nvim'
+end
 
 ###################
 # Prompt settings #
@@ -19,6 +27,7 @@ set -g theme_nerd_fonts yes
 set -g theme_color_scheme solarized-dark
 set -g theme_newline_cursor yes
 set -g theme_newline_prompt "->> "
+set -g theme_date_format "+%H:%M"
 
 ##################
 # Color settings #
