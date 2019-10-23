@@ -1,1 +1,1 @@
-/home/malo/.nix-profile/share/fish-foreign-env/functions/fenv.parse.diff.fish
+/Users/malo/.nix-profile/share/fish-foreign-env/functions/fenv.parse.diff.fish
