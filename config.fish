@@ -23,11 +23,7 @@ end
 # Prompt settings #
 ###################
 
-set -g theme_nerd_fonts yes
-set -g theme_color_scheme solarized-dark
-set -g theme_newline_cursor yes
-set -g theme_newline_prompt "->> "
-set -g theme_date_format "+%H:%M"
+starship init fish | source
 
 ##################
 # Color settings #
