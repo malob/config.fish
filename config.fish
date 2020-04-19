@@ -5,7 +5,7 @@ set fish_greeting ''
 # Aliases #
 ###########
 
-# Bat installed via by Nix (see nixpkgs config)
+# Bat installed by Nix (see nixpkgs config)
 if which bat > /dev/null
   alias cat="bat"
 end
@@ -14,10 +14,19 @@ end
 # Prompt settings #
 ###################
 
-# Starship installed via by Nix (see nixpkgs config)
+# Starship installed by Nix (see nixpkgs config)
 if which starship > /dev/null
   set -gx STARSHIP_CONFIG ~/.config/nixpkgs/configs/starship.toml
   starship init fish | source
+end
+
+#####################
+# nix-shell support #
+#####################
+
+# any-nix-shell installed by Nix (see nixpkgs config)
+if which any-nix-shell > /dev/null
+  any-nix-shell fish --info-right | source
 end
 
 ##################
@@ -71,7 +80,7 @@ set -g fish_pager_color_progress $base2 --background=$cyan
 # Other #
 #########
 
-# Starship installed via by Nix (see nixpkgs config)
+# Starship installed by Nix (see nixpkgs config)
 if which nvr > /dev/null
   set -gx EDITOR "nvr --remote-silent"
 end
