@@ -6,18 +6,6 @@ set fish_greeting ''
 ###########
 
 alias cat="bat"
-alias g="git"
-
-if test -n "$NVIM_LISTEN_ADDRESS"
-  alias nh "nvr -o"
-  alias nv "nvr -O"
-  alias nt "nvr --remote-tab"
-  alias n "nvr"
-  alias neovim 'command nvim'
-  alias nvim "echo 'You\'re already in nvim. Consider using n, nh, nv, or nt instead. Use \'neovim\' to force.'"
-else
-  alias n 'nvim'
-end
 
 ###################
 # Prompt settings #
