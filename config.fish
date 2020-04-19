@@ -5,13 +5,20 @@ set fish_greeting ''
 # Aliases #
 ###########
 
-alias cat="bat"
+# Bat installed via by Nix (see nixpkgs config)
+if test -n (which bat)
+  alias cat="bat"
+end
 
 ###################
 # Prompt settings #
 ###################
 
-starship init fish | source
+# Starship installed via by Nix (see nixpkgs config)
+if test -n (which starship)
+  set -gx STARSHIP_CONFIG ~/.config/nixpkgs/configs/starship.toml
+  starship init fish | source
+end
 
 ##################
 # Color settings #
@@ -60,13 +67,11 @@ set -g fish_pager_color_completion $base0    # color of the completion itself
 set -g fish_pager_color_description $base01  # color of the completion description
 set -g fish_pager_color_progress $base2 --background=$cyan
 
-# overwritten by prompt theme
-# fish_color_cwd, the color of the current working directory in the default prompt
-# fish_color_user, the color of the current username in some fish default prompts
-# fish_color_host, the color of the current host system in some fish default prompts
-
 #########
 # Other #
 #########
 
-set -x EDITOR "nvr --remote-silent"
+# Starship installed via by Nix (see nixpkgs config)
+if test -n (which nvr)
+  set -gx EDITOR "nvr --remote-silent"
+end
