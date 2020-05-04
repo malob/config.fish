@@ -84,3 +84,5 @@ set -g fish_pager_color_progress $base2 --background=$cyan
 if which nvr > /dev/null
   set -gx EDITOR "nvr --remote-silent"
 end
+
+thefuck --alias | source
