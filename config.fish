@@ -20,13 +20,16 @@ if which starship > /dev/null
   starship init fish | source
 end
 
-#####################
-# nix-shell support #
-#####################
+##########################
+# nix-shell augmentation #
+##########################
 
 # any-nix-shell installed by Nix (see nixpkgs config)
-if which any-nix-shell > /dev/null
-  any-nix-shell fish --info-right | source
+# if which any-nix-shell > /dev/null
+#   any-nix-shell fish --info-right | source
+# end
+if which direnv > /dev/null
+  eval (direnv hook fish)
 end
 
 ##################
